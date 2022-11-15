@@ -22,12 +22,12 @@ public class Practice8 {
 		// TODO Auto-generated method stub
 
 		Practice8 p8 =new Practice8();
-		p8.setup();
+		p8.set_up();
 		p8.test_broken_links();
 		
 	}
 
-	public void setup()
+	public void set_up()
 	{
 		path=System.getProperty("user.dir");		
 		actual_path=path+"\\chrome_driver\\chromedriver.exe";
