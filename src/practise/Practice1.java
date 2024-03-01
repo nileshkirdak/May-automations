@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Practice1 {
 
@@ -38,9 +39,10 @@ public class Practice1 {
 		
 		System.setProperty("webdriver.chrome.driver", actual_path );
 		
+		ChromeOptions option = new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
 		
-		
-		driver=new ChromeDriver();
+		driver=new ChromeDriver(option);
 		
 		driver.manage().window().maximize();
 		
